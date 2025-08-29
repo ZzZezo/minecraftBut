@@ -1,5 +1,6 @@
 {
   "type": "minecraft:dialog_list",
+  "columns": 3,
   "title": {
     "text": "ᴍɪɴᴇᴄʀᴀғᴛ, ʙᴜᴛ...",
     "color": "#14dc12",
@@ -16,52 +17,16 @@
       "text": "sᴛᴀʀᴛ",
       "color": "#14dc12",
       "bold": true
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "/trigger mcb.start_challenge"
     }
   },
-  "button_width": 50,
+  "button_width": 100,
   "dialogs": [
-    {
-      "type": "minecraft:multi_action",
-      "title": "ᴛɪᴍᴇʀ",
-      "body": {
-        "type": "minecraft:plain_message",
-        "contents": [
-          "Testweise steht hier dieser Text"
-        ]
-      },
-      "exit_action": {
-        "label": "Back",
-        "action": {
-          "type": "minecraft:show_dialog",
-          "dialog": "mcbut:mcbut"
-        }
-      },
-      "actions": [
-        {
-          "label": "ʀᴇsᴜᴍᴇ",
-          "width": 100,
-          "action": {
-            "type": "minecraft:run_command",
-            "command": "/trigger mcb.start_timer"
-          }
-        },
-        {
-          "label": "ᴘᴀᴜsᴇ",
-          "width": 100,
-          "action": {
-            "type": "minecraft:run_command",
-            "command": "/trigger mcb.stop_timer"
-          }
-        },
-        {
-          "label": "ʀᴇsᴇᴛ",
-          "width": 100,
-          "action": {
-            "type": "minecraft:run_command",
-            "command": "/trigger mcb.reset_timer"
-          }
-        }
-      ]
-    }
+    "mcbut:general",
+    "mcbut:timer",
+    "mcbut:world"
   ]
 }

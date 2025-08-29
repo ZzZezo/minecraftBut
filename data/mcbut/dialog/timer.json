@@ -1,0 +1,52 @@
+{
+      "type": "minecraft:multi_action",
+      "title": "ᴛɪᴍᴇʀ",
+      "external_title": {
+        "text": "ᴛɪᴍᴇʀ",
+        "color": "#50a34e",
+        "bold": true
+      },
+      "columns": 3,
+      "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ᴛɪᴍᴇʀ ᴄᴏɴᴛʀᴏʟs"
+          }
+        ]
+      },
+      "exit_action": {
+        "label": "ʙᴀᴄᴋ",
+        "action": {
+          "type": "minecraft:show_dialog",
+          "dialog": "mcbut:mcbut"
+        }
+      },
+      "actions": [
+        {
+          "label": "sᴛᴀʀᴛ",
+          "width": 100,
+          "action": {
+            "type": "minecraft:run_command",
+            "command": "/trigger mcb.start_timer"
+          }
+        },
+        {
+          "label": "ᴘᴀᴜsᴇ",
+          "width": 100,
+          "action": {
+            "type": "minecraft:run_command",
+            "command": "/trigger mcb.stop_timer"
+          }
+        },
+        {
+          "label": "ʀᴇsᴇᴛ",
+          "width": 100,
+          "action": {
+            "type": "minecraft:run_command",
+            "command": "/trigger mcb.reset_timer"
+          }
+        }
+      ]
+    }

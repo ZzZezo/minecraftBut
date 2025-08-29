@@ -12,3 +12,4 @@ scoreboard players set TIMER_RUNNING mcb.Timer 0
 scoreboard objectives add mcb.start_timer trigger
 scoreboard objectives add mcb.stop_timer trigger
 scoreboard objectives add mcb.reset_timer trigger
+scoreboard objectives add mcb.start_challenge trigger

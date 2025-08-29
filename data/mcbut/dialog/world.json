@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:notice",
+  "title": "ɢᴇɴᴇʀᴀʟ sᴇᴛᴛɪɴɢs - ᴡᴏʀʟᴅ",
+  "external_title": "ᴡᴏʀʟᴅ sᴇᴛᴛɪɴɢs",
+  "body": [
+    {
+        "type": "minecraft:plain_message",
+        "contents": [
+          {
+            "type": "text",
+            "text": "There's nothing here yet..."
+          }
+        ]
+    }
+  ],
+  "inputs": [],
+  "action": {
+    "label": "ᴅᴏɴᴇ",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "mcbut:mcbut"
+    }
+  }
+}
