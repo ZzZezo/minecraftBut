@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": {
+    "text": "ᴍɪɴᴇᴄʀᴀғᴛ, ʙᴜᴛ...",
+    "color": "#14dc12",
+    "bold": true
+  },
+  "external_title": {
+    "text": "ᴍɪɴᴇᴄʀᴀғᴛ, ʙᴜᴛ...",
+    "color": "#50a34e"
+  },
+  "body": [],
+  "inputs": [],
+  "exit_action": {
+    "label": {
+      "text": "sᴛᴀʀᴛ",
+      "color": "#14dc12",
+      "bold": true
+    }
+  },
+  "button_width": 50,
+  "dialogs": [
+    {
+      "type": "minecraft:multi_action",
+      "title": "ᴛɪᴍᴇʀ",
+      "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+          "Testweise steht hier dieser Text"
+        ]
+      },
+      "exit_action": {
+        "label": "Back",
+        "action": {
+          "type": "minecraft:show_dialog",
+          "dialog": "mcbut:mcbut"
+        }
+      },
+      "actions": [
+        {
+          "label": "ʀᴇsᴜᴍᴇ",
+          "width": 100,
+          "action": {
+            "type": "minecraft:run_command",
+            "command": "/trigger mcb.start_timer"
+          }
+        },
+        {
+          "label": "ᴘᴀᴜsᴇ",
+          "width": 100,
+          "action": {
+            "type": "minecraft:run_command",
+            "command": "/trigger mcb.stop_timer"
+          }
+        },
+        {
+          "label": "ʀᴇsᴇᴛ",
+          "width": 100,
+          "action": {
+            "type": "minecraft:run_command",
+            "command": "/trigger mcb.reset_timer"
+          }
+        }
+      ]
+    }
+  ]
+}
