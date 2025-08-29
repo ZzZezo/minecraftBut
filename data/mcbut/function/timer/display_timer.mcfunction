@@ -1,0 +1,4 @@
+title @a actionbar [{"bold":true,"color":"green","score":{"name":"seconds","objective":"mcb.Timer"}},"s"]
+execute if score minutes mcb.Timer matches 1.. run title @a actionbar [{"bold":true,"color":"green","score":{"name":"minutes","objective":"mcb.Timer"}},"m ",{"score":{"name":"seconds","objective":"mcb.Timer"}},"s"]
+execute if score hours mcb.Timer matches 1.. run title @a actionbar [{"bold":true,"color":"green","score":{"name":"hours","objective":"mcb.Timer"}},"h ",{"score":{"name":"minutes","objective":"mcb.Timer"}},"m ",{"score":{"name":"seconds","objective":"mcb.Timer"}},"s"]
+execute if score days mcb.Timer matches 1.. run title @a actionbar [{"bold":true,"color":"green","score":{"name":"days","objective":"mcb.Timer"}},"d ",{"score":{"name":"hours","objective":"mcb.Timer"}},"h ",{"score":{"name":"minutes","objective":"mcb.Timer"}},"m ",{"score":{"name":"seconds","objective":"mcb.Timer"}},"s"]

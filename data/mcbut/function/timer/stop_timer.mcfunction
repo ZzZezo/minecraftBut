@@ -1,0 +1,1 @@
+scoreboard players set TIMER_RUNNING mcb.Timer 0
