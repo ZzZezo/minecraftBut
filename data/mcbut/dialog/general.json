@@ -12,13 +12,34 @@
       "end": 40,
       "step": 1,
       "initial": 20
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "healthMode",
+      "label": "Mode",
+      "label_visible": false,
+      "options": [
+        {
+          "id": "0",
+          "display": "ᴅᴇғᴀᴜʟᴛ",
+          "initial": true
+        },
+        {
+          "id": "1",
+          "display": "ᴜʟᴛʀᴀ ʜᴀʀᴅᴄᴏʀᴇ"
+        },
+        {
+          "id": "2",
+          "display": "ᴜʟᴛʀᴀ ᴜʟᴛʀᴀ ʜᴀʀᴅᴄᴏʀᴇ"
+        }
+      ]
     }
   ],
   "action": {
     "label": "ᴅᴏɴᴇ",
     "action": {
       "type": "minecraft:dynamic/run_command",
-      "template": "/function mcbut:settings/updated_general {maxHP:$(maxHP)}"
+      "template": "/function mcbut:settings/updated_general {maxHP:$(maxHP), healthMode:$(healthMode)}"
     }
   }
 }

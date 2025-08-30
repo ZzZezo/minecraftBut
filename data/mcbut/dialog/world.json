@@ -2,23 +2,35 @@
   "type": "minecraft:notice",
   "title": "ɢᴇɴᴇʀᴀʟ sᴇᴛᴛɪɴɢs - ᴡᴏʀʟᴅ",
   "external_title": "ᴡᴏʀʟᴅ sᴇᴛᴛɪɴɢs",
-  "body": [
+  "body": [],
+  "inputs": [
     {
-        "type": "minecraft:plain_message",
-        "contents": [
-          {
-            "type": "text",
-            "text": "There's nothing here yet..."
-          }
-        ]
+      "type": "minecraft:single_option",
+      "key": "borderMode",
+      "label": "Border",
+      "label_visible": false,
+      "options": [
+        {
+          "id": "0",
+          "display": "ɴᴏ ʙᴏʀᴅᴇʀ",
+          "initial": true
+        },
+        {
+          "id": "1",
+          "display": "ʟᴇᴠᴇʟ = ʙᴏʀᴅᴇʀ"
+        },
+        {
+          "id": "2",
+          "display": "ᴅᴀᴍᴀɢᴇ = ʙᴏʀᴅᴇʀ"
+        }
+      ]
     }
   ],
-  "inputs": [],
   "action": {
     "label": "ᴅᴏɴᴇ",
     "action": {
-      "type": "minecraft:show_dialog",
-      "dialog": "mcbut:mcbut"
+      "type": "minecraft:dynamic/run_command",
+      "template": "function mcbut:settings/updated_world {borderMode:$(borderMode)}"
     }
   }
 }

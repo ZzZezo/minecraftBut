@@ -10,3 +10,9 @@ execute if score TIMER_RUNNING mcb.Timer matches 1 run function mcbut:timer/time
 
 #show timer
 function mcbut:timer/display_timer
+
+#UUHC
+execute if score healthMode mcb.ChallengeSettings matches 2 run function mcbut:clear_heal_effects
+
+#border
+execute if score borderMode mcb.ChallengeSettings matches 1.. run function mcbut:border/border_tick
