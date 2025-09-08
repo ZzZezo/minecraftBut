@@ -27,6 +27,7 @@
   "dialogs": [
     "mcbut:general",
     "mcbut:timer",
-    "mcbut:world"
+    "mcbut:world",
+    "mcbut:force"
   ]
 }

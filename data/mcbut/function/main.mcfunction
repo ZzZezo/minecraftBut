@@ -16,3 +16,6 @@ execute if score healthMode mcb.ChallengeSettings matches 2 run function mcbut:c
 
 #border
 execute if score borderMode mcb.ChallengeSettings matches 1.. run function mcbut:border/border_tick
+
+#force item
+execute if score forceMode mcb.ChallengeSettings matches 1 if score TIMER_RUNNING mcb.Timer matches 1 run function mcbut:force/item/tick

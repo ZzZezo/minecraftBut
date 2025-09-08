@@ -4,8 +4,8 @@
 scoreboard players add gameticks mcb.Timer 1
 
 #20 (or given TPS) ticks = 1 second
-execute if score gameticks mcb.Timer >= TPS mcb.Timer run scoreboard players add seconds mcb.Timer 1
-execute if score gameticks mcb.Timer >= TPS mcb.Timer run scoreboard players set gameticks mcb.Timer 0
+execute if score gameticks mcb.Timer matches 20.. run scoreboard players add seconds mcb.Timer 1
+execute if score gameticks mcb.Timer matches 20.. run scoreboard players set gameticks mcb.Timer 0
 
 #60 seconds = 1 minute
 execute if score seconds mcb.Timer matches 60.. run scoreboard players add minutes mcb.Timer 1

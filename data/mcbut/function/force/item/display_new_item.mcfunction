@@ -1,0 +1,1 @@
+$bossbar set minecraft:mcbut.countdown name [{"sprite":"$(atlasPrefix)/$(trimmedVanillaID)"}," ",{"color":"green","bold":true,"translate":"$(translate)"}]

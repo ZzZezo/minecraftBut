@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:notice",
+  "title": "ғᴏʀᴄᴇ sᴇᴛᴛɪɴɢs",
+  "external_title": "ғᴏʀᴄᴇ",
+  "body": [],
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "forceMode",
+      "label": "balls",
+      "label_visible": false,
+      "options": [
+        {
+          "id": "0",
+          "display": "ɴᴏɴᴇ",
+          "initial": true
+        },
+        {
+          "id": "1",
+          "display": "ғᴏʀᴄᴇ ɪᴛᴇᴍ"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "cooldown",
+      "label": "ᴄᴏᴏʟᴅᴏᴡɴ",
+      "label_format": "%1$s: %2$s ᴍɪɴᴜᴛᴇs",
+      "start": 1,
+      "end": 15,
+      "step": 1,
+      "initial": 5
+    }
+  ],
+  "action": {
+    "label": "ᴅᴏɴᴇ",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "/function mcbut:settings/updated_force {forceMode:$(forceMode), cooldown:$(cooldown)}"
+    }
+  }
+}
