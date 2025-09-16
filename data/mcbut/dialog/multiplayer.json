@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:notice",
+  "title": "ᴍᴜʟᴛɪᴘʟᴀʏᴇʀ sᴇᴛᴛɪɴɢs",
+  "external_title": "ᴍᴜʟᴛɪᴘʟᴀʏᴇʀ",
+  "body": [],
+  "inputs": [
+    {
+      "type": "minecraft:boolean",
+      "key": "sharedDMG",
+      "label": "sʜᴀʀᴇᴅ ᴅᴀᴍᴀɢᴇ",
+      "on_true": "1",
+      "on_false": "0"
+    }
+  ],
+  "action": {
+    "label": "ᴅᴏɴᴇ",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "/function mcbut:settings/updated_multiplayer {sharedDMG:$(sharedDMG)}"
+    }
+  }
+}

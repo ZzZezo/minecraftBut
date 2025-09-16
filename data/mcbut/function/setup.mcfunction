@@ -37,6 +37,10 @@ scoreboard objectives add mcb.CurrentXPLevel level "what xp level the players ar
 #forceitem
 scoreboard objectives add mcb.ForceItem.hasCompleted dummy "if the player has completed his task"
 
+#sharedHP
+data modify storage minecraft:mcb sharedDmg.dmgToDeal set value 0
+scoreboard objectives add mcb.sharedDmg.lastDmgAmnt minecraft.custom:minecraft.damage_taken
+
 #triggers
 scoreboard objectives add mcb.start_timer trigger
 scoreboard objectives add mcb.stop_timer trigger

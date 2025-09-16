@@ -19,3 +19,8 @@ execute if score borderMode mcb.ChallengeSettings matches 1.. run function mcbut
 
 #force item
 execute if score forceMode mcb.ChallengeSettings matches 1 if score TIMER_RUNNING mcb.Timer matches 1 run function mcbut:force/item/tick
+
+#sharedDmg
+execute if score sharedDmg mcb.ChallengeSettings matches 0 run scoreboard players set @a mcb.sharedDmg.lastDmgAmnt 0
+execute if score TIMER_RUNNING mcb.Timer matches 0 run scoreboard players set @a mcb.sharedDmg.lastDmgAmnt 0
+execute if score sharedDmg mcb.ChallengeSettings matches 1 if score TIMER_RUNNING mcb.Timer matches 1 run function mcbut:shared_dmg/tick

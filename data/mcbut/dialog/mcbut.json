@@ -28,6 +28,7 @@
     "mcbut:general",
     "mcbut:timer",
     "mcbut:world",
-    "mcbut:force"
+    "mcbut:force",
+    "mcbut:multiplayer"
   ]
 }

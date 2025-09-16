@@ -13,6 +13,7 @@ xp set @a 0 levels
 time set day
 weather clear
 effect give @a saturation 1 200 true
+effect give @a instant_health 1 200 true
 
 #start timer
 function mcbut:timer/reset_timer
