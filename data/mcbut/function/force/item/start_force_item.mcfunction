@@ -4,6 +4,7 @@ scoreboard players operation forceItem mcbut.Countdown = forceCooldown mcb.Chall
 execute store result bossbar minecraft:mcbut.countdown max run scoreboard players get forceCooldown mcb.ChallengeSettings
 execute store result bossbar minecraft:mcbut.countdown value run scoreboard players get forceCooldown mcb.ChallengeSettings
 bossbar set minecraft:mcbut.countdown visible true
+bossbar set minecraft:mcbut.countdown players @a
 
 #create new armorstand, used for item generation
 item replace entity @e[tag=mcb.ForceItemStand] armor.head with air
