@@ -1,6 +1,8 @@
 tellraw @a [{"color":"#80FF88","text":"R"},{"color":"#7AFA82","text":"e"},{"color":"#75F57B","text":"l"},{"color":"#6FF075","text":"o"},{"color":"#6AEB6E","text":"a"},{"color":"#64E668","text":"d"},{"color":"#5EE061","text":"e"},{"color":"#59DB5B","text":"d "},{"color":"#53D654","text":"s"},{"color":"#4DD14E","text":"u"},{"color":"#48CC47","text":"c"},{"color":"#42C741","text":"c"},{"color":"#3DC23A","text":"e"},{"color":"#37BD34","text":"s"},{"color":"#31B82D","text":"s"},{"color":"#2CB327","text":"f"},{"color":"#26AD20","text":"u"},{"color":"#20A81A","text":"l"},{"color":"#1BA313","text":"l"},{"color":"#159E0D","text":"y"},{"color":"#0A9400","text":". "},{player:{name:"ZezoHD"},color:"#ffffff",click_event:{action:"open_url",url:"https://guns.lol/notZezo"},hover_event:{action:"show_text",value:[{text:"Made with ",color:"#3584e4"},{text:"❤",color:"#c01c28"},{text:" by Zezo",color:"#3584e4"}]}}]
 
-gamerule sendCommandFeedback false
+#test
+gamerule send_command_feedback false
+
 forceload add 0 0
 
 #create scoreboards
